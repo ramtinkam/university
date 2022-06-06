@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/university.dir/main.cpp.o CMakeFiles/university.dir/Course.cpp.o -o university 

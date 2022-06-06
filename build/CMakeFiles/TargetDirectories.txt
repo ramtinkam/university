@@ -1,0 +1,5 @@
+/home/ramtin/code/temp/uni/build/CMakeFiles/edit_cache.dir
+/home/ramtin/code/temp/uni/build/CMakeFiles/package_source.dir
+/home/ramtin/code/temp/uni/build/CMakeFiles/rebuild_cache.dir
+/home/ramtin/code/temp/uni/build/CMakeFiles/package.dir
+/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir

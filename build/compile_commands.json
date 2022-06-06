@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ramtin/code/temp/uni/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/university.dir/main.cpp.o -c /home/ramtin/code/temp/uni/main.cpp",
+  "file": "/home/ramtin/code/temp/uni/main.cpp"
+},
+{
+  "directory": "/home/ramtin/code/temp/uni/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/university.dir/Course.cpp.o -c /home/ramtin/code/temp/uni/Course.cpp",
+  "file": "/home/ramtin/code/temp/uni/Course.cpp"
+}
+]
