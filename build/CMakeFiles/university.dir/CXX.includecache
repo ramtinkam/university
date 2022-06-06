@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ramtin/code/temp/uni/Course.cpp
-iostream
--
-string
--
-Course.h
-/home/ramtin/code/temp/uni/Course.h
-
 /home/ramtin/code/temp/uni/Course.h
 string
 -
