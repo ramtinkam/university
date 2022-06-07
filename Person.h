@@ -28,6 +28,7 @@ using namespace std;
         friend istream& operator >>(istream& , Person&);
         Person& operator =(const Person&);
         bool validate();
+        double calculateSalary();
         
         
     };

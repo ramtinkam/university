@@ -137,3 +137,6 @@ bool Person::validate (){
         return false;
     }
 }
+double Person::calculateSalary(){
+    return *workHours*10000;
+}
