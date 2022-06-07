@@ -26,6 +26,7 @@ using namespace std;
         void setworkHours(double);
         friend ostream& operator <<(ostream& , const Person&);
         friend istream& operator >>(istream& , Person&);
+        Person& operator =(const Person&);
         
         
     };

@@ -69,3 +69,13 @@ istream& operator >>(istream& in, Person& a){
     a.setworkHours(w);
     return in;
 }
+
+Person& Person::operator =(const Person& a){
+    if(&a != this){
+        firstname=a.firstname;
+        lastname=a.lastname;
+        id=a.id;
+        *workHours=*(a.workHours);
+    }
+    return *this;
+}
