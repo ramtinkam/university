@@ -24,6 +24,8 @@ using namespace std;
         void setlastname(string);
         void setid(string);
         void setworkHours(double);
+        friend ostream& operator <<(ostream& , const Person&);
+        friend istream& operator >>(istream& , Person&);
         
         
     };

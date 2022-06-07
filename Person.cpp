@@ -53,3 +53,19 @@ void Person::setid(string a){
 void Person::setworkHours(double a){
     *workHours=a;
 }
+
+ostream& operator <<(ostream& out, const Person& a){
+    out<<a.getfirstname()<<" "<<a.getlastname()<<" "<<a.getid()<<" "<<*(a.getworkHours())<<"\n";
+    return out;
+}
+istream& operator >>(istream& in, Person& a){
+    cout<<"enter firstname lastname id and workHours:\n";
+    string f,l,i;
+    double w;
+    in>>f>>l>>i>>w;
+    a.setfirstname(f);
+    a.setlastname(l);
+    a.setid(i);
+    a.setworkHours(w);
+    return in;
+}
