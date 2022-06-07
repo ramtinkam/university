@@ -27,6 +27,7 @@ using namespace std;
         friend ostream& operator <<(ostream& , const Person&);
         friend istream& operator >>(istream& , Person&);
         Person& operator =(const Person&);
+        bool validate();
         
         
     };

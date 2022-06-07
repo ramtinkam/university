@@ -14,6 +14,10 @@ Person::Person(string f,string l,string i,double w){
     id = i;
     workHours = new double;
     *workHours=w;
+    if(!validate()){
+        cout<<"invalid id";
+        exit(0);
+    }
 }
 
 Person::Person(const Person& a){
@@ -22,6 +26,7 @@ Person::Person(const Person& a){
     id=a.id;
     workHours = new double;
     *workHours = *(a.workHours);
+    
 }
 
 Person::~Person(){
@@ -78,4 +83,57 @@ Person& Person::operator =(const Person& a){
         *workHours=*(a.workHours);
     }
     return *this;
+}
+
+bool Person::validate (){
+    string year;
+    if(id.length()>=8 && id.length()<=10){
+        string::iterator i=id.begin();
+        for(int j=0;j<id.length();j++,i++){
+            if(j<2){
+                if(*i>='0' && *i<='9'){
+                    year += *i;
+                }
+                else{
+                    return false;
+                }
+            }
+            if(j==2){
+                if(*i>='0' && *i<='9'){
+                    return false;
+                }
+            }
+            if(j>2&&j<5){
+                if(*i>='4' && *i<='6'){
+                    return false;
+                }
+            }
+            if(j>=5){
+                if(!((*i<'4'&&*i>='0') ||(*i>'6'&&*i<='9'))){
+                    return false;
+                }
+            }
+        }
+        string::reverse_iterator r=id.rbegin();
+        for(int x=0;x<7;x++,r++){
+            if(x<5){
+                if(!(*r>='0' && *r<='9')){
+                    return false;
+                }
+            }
+            else if(x==5){
+                if(*r>='0' && *r<='9'){
+                    return false;
+                }
+
+            }
+        }
+        if(!((stoi(year) >= 84 && stoi(year) <= 99) || stoi(year)==00)){
+            return false;
+        }
+        return true;
+    }
+    else {
+        return false;
+    }
 }
