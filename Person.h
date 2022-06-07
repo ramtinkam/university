@@ -16,6 +16,14 @@ using namespace std;
         Person(string ,string ,string ,double);
         Person(const Person&);
         ~Person();
+        string getfirstname()const;
+        string getlastname()const;
+        string getid()const;
+        double* getworkHours()const;
+        void setfirstname(string);
+        void setlastname(string);
+        void setid(string);
+        void setworkHours(double);
         
         
     };

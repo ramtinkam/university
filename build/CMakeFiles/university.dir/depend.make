@@ -4,6 +4,9 @@
 CMakeFiles/university.dir/Course.cpp.o: ../Course.cpp
 CMakeFiles/university.dir/Course.cpp.o: ../Course.h
 
+CMakeFiles/university.dir/Person.cpp.o: ../Person.cpp
+CMakeFiles/university.dir/Person.cpp.o: ../Person.h
+
 CMakeFiles/university.dir/main.cpp.o: ../Course.h
 CMakeFiles/university.dir/main.cpp.o: ../main.cpp
 

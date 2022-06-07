@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ramtin/code/temp/uni/Course.h
-string
--
-
-/home/ramtin/code/temp/uni/main.cpp
+/home/ramtin/code/temp/uni/Person.cpp
 iostream
 -
 string
 -
-Course.h
-/home/ramtin/code/temp/uni/Course.h
+Person.h
+/home/ramtin/code/temp/uni/Person.h
+
+/home/ramtin/code/temp/uni/Person.h
+string
+-
 

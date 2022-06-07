@@ -27,3 +27,29 @@ Person::Person(const Person& a){
 Person::~Person(){
     delete workHours;
 }
+
+string Person::getfirstname()const{
+    return firstname;
+}
+string Person::getlastname()const{
+    return lastname;
+}
+string Person::getid()const{
+    return id;
+}
+double* Person::getworkHours()const{
+    return workHours;
+}
+
+void Person::setfirstname(string a){
+    firstname=a;
+}
+void Person::setlastname(string a){
+    lastname=a;
+}
+void Person::setid(string a){
+    id=a;
+}
+void Person::setworkHours(double a){
+    *workHours=a;
+}
