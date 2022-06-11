@@ -24,6 +24,7 @@ using namespace std;
         void setmark(double);
         friend ostream& operator <<(ostream&,const Course&);
         friend istream& operator >>(istream&, Course&);
+        Course& operator =(const Course&);
     };
 
 #endif

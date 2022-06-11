@@ -63,3 +63,12 @@ istream& operator >>(istream& in,Course& a){
     a.setmark(m);
     return in;
 }
+
+Course& Course::operator =(const Course&a){
+    if(&a != this){
+        *mark = *(a.mark);
+        unit=a.unit;
+        name=a.name;
+    }
+    return *this;
+}

@@ -10,14 +10,14 @@
 string
 -
 
-/home/ramtin/code/temp/uni/Person.cpp
-iostream
--
+/home/ramtin/code/temp/uni/Person.h
 string
 -
-Person.h
-/home/ramtin/code/temp/uni/Person.h
 
+/home/ramtin/code/temp/uni/Student.h
+Course.h
+/home/ramtin/code/temp/uni/Course.h
+Person.h
 /home/ramtin/code/temp/uni/Person.h
 string
 -
@@ -31,4 +31,6 @@ Course.h
 /home/ramtin/code/temp/uni/Course.h
 Person.h
 /home/ramtin/code/temp/uni/Person.h
+Student.h
+/home/ramtin/code/temp/uni/Student.h
 
