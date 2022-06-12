@@ -53,7 +53,7 @@ ostream& operator <<(ostream& out,const Course& a){
 }
 
 istream& operator >>(istream& in,Course& a){
-    cout<<"enter name unit and mark:\n";
+    cout<<"enter name, unit and mark:\n";
     string n;
     int u;
     double m;

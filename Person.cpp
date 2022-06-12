@@ -64,7 +64,7 @@ ostream& operator <<(ostream& out, const Person& a){
     return out;
 }
 istream& operator >>(istream& in, Person& a){
-    cout<<"enter firstname lastname id and workHours:\n";
+    cout<<"enter firstname, lastname, id and workHours:\n";
     string f,l,i;
     double w;
     in>>f>>l>>i>>w;
