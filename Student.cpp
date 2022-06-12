@@ -16,6 +16,10 @@ Student::Student(string f,string l,string i,double w,Course* c,string fi,int n):
     }
     FieldOfStudy=fi;
     numOfCourses=n;
+    if(!validate()){
+        cout<<"invalid id";
+        exit(0);
+    }
 }
 Student::Student(const Student& a):Person(a){
     courses = new Course[a.numOfCourses];
@@ -73,4 +77,15 @@ istream& operator >>(istream& in,Student& a){
         delete []x;
     }
     a.setCourses(c);
+    return in;
+}
+
+bool Student::validate(){
+    string i=this->getid();
+    if(Person::validate() && (i[2]=='*')){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

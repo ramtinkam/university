@@ -25,6 +25,7 @@ using namespace std;
         void setCourses(Course*);
         friend ostream& operator <<(ostream& ,const Student&);
         friend istream& operator >>(istream& ,Student&);
+        bool validate();
 
     };
 
