@@ -89,3 +89,14 @@ bool Student::validate(){
         return false;
     }
 }
+
+float Student::gpa(){
+    float gpa=0.0;
+    int units=0;
+    for(int i=0;i<numOfCourses;i++){
+        gpa += *(courses[i].getmark())*courses[i].getunit();
+        units += courses[i].getunit();
+    }
+    gpa = gpa/units;
+    return gpa;
+}
