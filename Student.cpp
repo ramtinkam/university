@@ -90,8 +90,8 @@ bool Student::validate(){
     }
 }
 
-float Student::gpa(){
-    float gpa=0.0;
+double Student::gpa(){
+    double gpa=0;
     int units=0;
     for(int i=0;i<numOfCourses;i++){
         gpa += *(courses[i].getmark())*courses[i].getunit();
@@ -99,4 +99,11 @@ float Student::gpa(){
     }
     gpa = gpa/units;
     return gpa;
+}
+double Student::calculateSalary(){
+    double salary=*(this->getworkHours())*20000;
+    if(this->gpa()>17){
+        salary += salary/10;
+    }
+    return salary;
 }

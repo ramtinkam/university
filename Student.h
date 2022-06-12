@@ -26,7 +26,9 @@ using namespace std;
         friend ostream& operator <<(ostream& ,const Student&);
         friend istream& operator >>(istream& ,Student&);
         bool validate();
-        float gpa();
+        double gpa();
+        double calculateSalary();
+
 
     };
 
