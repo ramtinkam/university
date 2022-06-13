@@ -18,6 +18,7 @@ using namespace std;
         friend ostream& operator <<(ostream& ,const Professor&);
         friend istream& operator >>(istream& ,Professor&);
         bool validate();
+        double calculateSalary();
 
     };
 

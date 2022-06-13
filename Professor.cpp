@@ -50,3 +50,23 @@ bool Professor::validate(){
         return false;
     }
 }
+
+double Professor::calculateSalary(){
+    double multiplier=50000;
+    string i=this->getid();
+    i.erase(i.begin()+2,i.end());
+    double years =101-stod(i);
+    multiplier += years*2000;
+    if(this->title=="Assistant Professor"){
+        multiplier += 10000;
+    }
+    else if(this->title=="Associate Professor"){
+        multiplier += 20000;
+    }
+    else if(this->title=="Professor"){
+        multiplier += 30000;
+    }
+    double x= *(this->getworkHours());
+    double salary = x*multiplier;
+    return salary;
+}
