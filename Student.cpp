@@ -107,3 +107,18 @@ double Student::calculateSalary(){
     }
     return salary;
 }
+Student& Student::operator =(const Student& a){
+    if (&a!=this){
+        this->setfirstname(a.getfirstname());
+        this->setlastname(a.getlastname());
+        this->setid(a.getid());
+        this->setworkHours(*a.getworkHours());
+        courses = new Course[a.numOfCourses];
+        for(int i=0;i<a.numOfCourses;i++){
+            courses[i]=a.courses[i];
+        }
+        FieldOfStudy=a.FieldOfStudy;
+        numOfCourses=a.numOfCourses;
+    }
+    return *this;
+}

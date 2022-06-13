@@ -23,5 +23,10 @@
   "directory": "/home/ramtin/code/temp/uni/build",
   "command": "/usr/bin/g++   -g -o CMakeFiles/university.dir/Professor.cpp.o -c /home/ramtin/code/temp/uni/Professor.cpp",
   "file": "/home/ramtin/code/temp/uni/Professor.cpp"
+},
+{
+  "directory": "/home/ramtin/code/temp/uni/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/university.dir/University.cpp.o -c /home/ramtin/code/temp/uni/University.cpp",
+  "file": "/home/ramtin/code/temp/uni/University.cpp"
 }
 ]

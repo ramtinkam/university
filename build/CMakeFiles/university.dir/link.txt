@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/university.dir/main.cpp.o CMakeFiles/university.dir/Course.cpp.o CMakeFiles/university.dir/Person.cpp.o CMakeFiles/university.dir/Student.cpp.o CMakeFiles/university.dir/Professor.cpp.o -o university 
+/usr/bin/g++ -g -rdynamic CMakeFiles/university.dir/main.cpp.o CMakeFiles/university.dir/Course.cpp.o CMakeFiles/university.dir/Person.cpp.o CMakeFiles/university.dir/Student.cpp.o CMakeFiles/university.dir/Professor.cpp.o CMakeFiles/university.dir/University.cpp.o -o university 

@@ -16,9 +16,17 @@ CMakeFiles/university.dir/Student.cpp.o
  /home/ramtin/code/temp/uni/Person.h
  /home/ramtin/code/temp/uni/Student.cpp
  /home/ramtin/code/temp/uni/Student.h
+CMakeFiles/university.dir/University.cpp.o
+ /home/ramtin/code/temp/uni/Course.h
+ /home/ramtin/code/temp/uni/Person.h
+ /home/ramtin/code/temp/uni/Professor.h
+ /home/ramtin/code/temp/uni/Student.h
+ /home/ramtin/code/temp/uni/University.cpp
+ /home/ramtin/code/temp/uni/University.h
 CMakeFiles/university.dir/main.cpp.o
  /home/ramtin/code/temp/uni/Course.h
  /home/ramtin/code/temp/uni/Person.h
  /home/ramtin/code/temp/uni/Professor.h
  /home/ramtin/code/temp/uni/Student.h
+ /home/ramtin/code/temp/uni/University.h
  /home/ramtin/code/temp/uni/main.cpp

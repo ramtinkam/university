@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/university.dir/Person.cpp.o"
   "CMakeFiles/university.dir/Professor.cpp.o"
   "CMakeFiles/university.dir/Student.cpp.o"
+  "CMakeFiles/university.dir/University.cpp.o"
   "CMakeFiles/university.dir/main.cpp.o"
   "university"
   "university.pdb"
