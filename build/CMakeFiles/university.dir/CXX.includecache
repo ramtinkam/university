@@ -14,6 +14,22 @@ string
 string
 -
 
+/home/ramtin/code/temp/uni/Professor.cpp
+iostream
+-
+string
+-
+Person.h
+/home/ramtin/code/temp/uni/Person.h
+Professor.h
+/home/ramtin/code/temp/uni/Professor.h
+
+/home/ramtin/code/temp/uni/Professor.h
+Person.h
+/home/ramtin/code/temp/uni/Person.h
+string
+-
+
 /home/ramtin/code/temp/uni/Student.h
 Course.h
 /home/ramtin/code/temp/uni/Course.h

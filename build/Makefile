@@ -218,6 +218,33 @@ Person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/university.dir/build.make CMakeFiles/university.dir/Person.cpp.s
 .PHONY : Person.cpp.s
 
+Professor.o: Professor.cpp.o
+
+.PHONY : Professor.o
+
+# target to build an object file
+Professor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/university.dir/build.make CMakeFiles/university.dir/Professor.cpp.o
+.PHONY : Professor.cpp.o
+
+Professor.i: Professor.cpp.i
+
+.PHONY : Professor.i
+
+# target to preprocess a source file
+Professor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/university.dir/build.make CMakeFiles/university.dir/Professor.cpp.i
+.PHONY : Professor.cpp.i
+
+Professor.s: Professor.cpp.s
+
+.PHONY : Professor.s
+
+# target to generate assembly for a file
+Professor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/university.dir/build.make CMakeFiles/university.dir/Professor.cpp.s
+.PHONY : Professor.cpp.s
+
 Student.o: Student.cpp.o
 
 .PHONY : Student.o
@@ -289,6 +316,9 @@ help:
 	@echo "... Person.o"
 	@echo "... Person.i"
 	@echo "... Person.s"
+	@echo "... Professor.o"
+	@echo "... Professor.i"
+	@echo "... Professor.s"
 	@echo "... Student.o"
 	@echo "... Student.i"
 	@echo "... Student.s"

@@ -7,6 +7,10 @@ CMakeFiles/university.dir/Course.cpp.o: ../Course.h
 CMakeFiles/university.dir/Person.cpp.o: ../Person.cpp
 CMakeFiles/university.dir/Person.cpp.o: ../Person.h
 
+CMakeFiles/university.dir/Professor.cpp.o: ../Person.h
+CMakeFiles/university.dir/Professor.cpp.o: ../Professor.cpp
+CMakeFiles/university.dir/Professor.cpp.o: ../Professor.h
+
 CMakeFiles/university.dir/Student.cpp.o: ../Course.h
 CMakeFiles/university.dir/Student.cpp.o: ../Person.h
 CMakeFiles/university.dir/Student.cpp.o: ../Student.cpp

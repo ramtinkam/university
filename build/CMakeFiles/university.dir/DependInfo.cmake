@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ramtin/code/temp/uni/Course.cpp" "/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir/Course.cpp.o"
   "/home/ramtin/code/temp/uni/Person.cpp" "/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir/Person.cpp.o"
+  "/home/ramtin/code/temp/uni/Professor.cpp" "/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir/Professor.cpp.o"
   "/home/ramtin/code/temp/uni/Student.cpp" "/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir/Student.cpp.o"
   "/home/ramtin/code/temp/uni/main.cpp" "/home/ramtin/code/temp/uni/build/CMakeFiles/university.dir/main.cpp.o"
   )
