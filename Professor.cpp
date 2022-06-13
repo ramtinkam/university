@@ -8,9 +8,17 @@ using namespace std;
 Professor::Professor():Person(){}
 Professor::Professor(string f,string l,string i,double w,string t):Person(f,l,i,w){
     title = t;
+    if(!validate()){
+        cout<<"invalid id";
+        exit(0);
+    }
 }
 Professor::Professor(const Professor& a):Person(a){
     title=a.title;
+    if(!validate()){
+        cout<<"invalid id";
+        exit(0);
+    }
 }
 
 string Professor::getTitle()const{return title;}
@@ -31,4 +39,14 @@ istream& operator >>(istream& in,Professor& a){
     a.setworkHours(w);
     a.setTitle(t);
     return in;
+}
+
+bool Professor::validate(){
+    string i=this->getid();
+    if(Person::validate() && i[2]=='#' && i.length()==8){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

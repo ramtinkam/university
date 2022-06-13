@@ -17,6 +17,7 @@ using namespace std;
         void setTitle(string);
         friend ostream& operator <<(ostream& ,const Professor&);
         friend istream& operator >>(istream& ,Professor&);
+        bool validate();
 
     };
 
