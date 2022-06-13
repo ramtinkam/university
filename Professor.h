@@ -10,8 +10,14 @@ using namespace std;
         private:
         string title;
         public:
+        Professor();
         Professor(string ,string ,string ,double ,string);
         Professor(const Professor&);
+        string getTitle()const;
+        void setTitle(string);
+        friend ostream& operator <<(ostream& ,const Professor&);
+        friend istream& operator >>(istream& ,Professor&);
+
     };
 
 

@@ -60,7 +60,7 @@ void Person::setworkHours(double a){
 }
 
 ostream& operator <<(ostream& out, const Person& a){
-    out<<a.getfirstname()<<" "<<a.getlastname()<<" "<<a.getid()<<" "<<*(a.getworkHours())<<"\n";
+    out<<a.getfirstname()<<" "<<a.getlastname()<<" id:"<<a.getid()<<" workHours:"<<*(a.getworkHours())<<"\n";
     return out;
 }
 istream& operator >>(istream& in, Person& a){
