@@ -35,6 +35,7 @@ using namespace std;
         void sort(Professor*);
         friend ostream& operator <<(ostream& ,University&);
         friend istream& operator >>(istream&, University&);
+        double averageGpa();
 
     };
 

@@ -160,3 +160,12 @@ istream& operator>>(istream& in,University& a){
     a.setsArray(s);
     return in;
 }
+
+double University::averageGpa(){
+    double avgGpa=0;
+    for (int i=0;i<numOfStudents;i++){
+        avgGpa += sArray[i].gpa();
+    }
+    avgGpa = avgGpa/numOfStudents;
+    return avgGpa;
+}
