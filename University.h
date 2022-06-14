@@ -37,6 +37,7 @@ using namespace std;
         friend istream& operator >>(istream&, University&);
         double averageGpa();
         double averageGpaOfField(string);
+        double averageMarkOfCourse(string);
 
     };
 

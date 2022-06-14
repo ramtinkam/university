@@ -181,3 +181,19 @@ double University::averageGpaOfField(string f){
     avgGpa = avgGpa/num;
     return avgGpa;
 }
+
+double University::averageMarkOfCourse(string c){
+    double avgGpa=0,num=0;
+    for (int i=0;i<numOfStudents;i++){
+        Course*  co=sArray[i].getcourses(); 
+        for(int j=0;j<sArray[i].getnumOfCourses();j++){
+            if (co[j].getname()==c){
+                num++;
+                avgGpa += *co[j].getmark();
+            }
+        }
+    }
+    avgGpa = avgGpa/num;
+    return avgGpa;
+
+}
