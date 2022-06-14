@@ -169,3 +169,15 @@ double University::averageGpa(){
     avgGpa = avgGpa/numOfStudents;
     return avgGpa;
 }
+
+double University::averageGpaOfField(string f){
+    double avgGpa=0,num=0;
+    for (int i=0;i<numOfStudents;i++){
+        if (sArray[i].getFieldOfStudy()==f){
+            num++;
+            avgGpa += sArray[i].gpa();
+        }
+    }
+    avgGpa = avgGpa/num;
+    return avgGpa;
+}
