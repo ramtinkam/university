@@ -38,6 +38,7 @@ using namespace std;
         double averageGpa();
         double averageGpaOfField(string);
         double averageMarkOfCourse(string);
+        void printCourses();
 
     };
 

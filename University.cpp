@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <vector>
 #include "Course.h"
 #include "Person.h"
 #include "Student.h"
@@ -196,4 +197,55 @@ double University::averageMarkOfCourse(string c){
     avgGpa = avgGpa/num;
     return avgGpa;
 
+}
+
+void University::printCourses(){
+    vector<string> courseNames;
+    vector<double> courseGpa;
+    bool flg=true;
+    for (int j=0;j<this->getNumOfStudents();j++){
+        Course* c=sArray[j].getcourses();
+        for(int i=0;i<sArray[j].getnumOfCourses();i++){
+            flg=true;
+            for(string it:courseNames)
+                if(it==c[i].getname())
+                    flg=false;
+            if(flg==true){
+                courseNames.push_back(c[i].getname());
+                courseGpa.push_back(this->averageMarkOfCourse(c[i].getname()));
+            }
+            
+        }
+    }
+
+    string cn[courseNames.size()];
+    double cg[courseGpa.size()];
+    auto itd=courseGpa.begin();
+    int r=0;
+    for(auto its=courseNames.begin();its!=courseNames.end();its++){
+        cn[r]=*its;
+        cg[r]=*itd;
+        r++;
+        itd++;
+    }
+
+
+    string stemp;
+    double dtemp;
+    for(int i=0;i<courseNames.size()-1;i++){
+            for(int j=0;j<courseNames.size()-i-1;j++){
+                if(cg[j]>cg[j+1]){
+                    stemp = cn[j];
+                    cn[j]=cn[j+1];
+                    cn[j+1]=stemp;
+                    dtemp = cg[j];
+                    cg[j]=cg[j+1];
+                    cg[j+1]=dtemp;
+                }
+            }
+    }
+    for(int i=0;i<courseNames.size();i++){
+        cout<<cn[i]<<" "<<cg[i]<<"\n";
+    }
+    
 }
