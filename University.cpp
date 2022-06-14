@@ -200,10 +200,12 @@ double University::averageMarkOfCourse(string c){
 
 }
 
+
 void University::printCourses(){
     vector<string> courseNames;
     vector<double> courseGpa;
     bool flg=true;
+    //storing each course and its gpa inside an vector
     for (int j=0;j<this->getNumOfStudents();j++){
         Course* c=sArray[j].getcourses();
         for(int i=0;i<sArray[j].getnumOfCourses();i++){
@@ -233,6 +235,7 @@ void University::printCourses(){
 
     string stemp;
     double dtemp;
+    //sorting the courses
     for(int i=0;i<courseNames.size()-1;i++){
             for(int j=0;j<courseNames.size()-i-1;j++){
                 if(cg[j]>cg[j+1]){
@@ -272,6 +275,7 @@ void University::saveToFile(){
     vector<string> name;
     vector<string> id;
     bool flg;
+    //storing each field inside an vector and then storing the best students info inside other vectors with the same index
     for(int i=0;i<this->getNumOfStudents();i++){
         flg=true;
          int j=0;
@@ -293,6 +297,7 @@ void University::saveToFile(){
             id.push_back(sArray[i].getid());
         }
     }
+    //writing the vectors to file
     ofstream file;
     file.open("students.txt",ios::trunc);
     int r=0;

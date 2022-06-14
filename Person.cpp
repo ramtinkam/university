@@ -88,6 +88,7 @@ Person& Person::operator =(const Person& a){
 bool Person::validate (){
     string year;
     if(id.length()>=8 && id.length()<=10){
+        //checking first two numbers and next few characters
         string::iterator i=id.begin();
         for(int j=0;j<id.length();j++,i++){
             if(j<2){
@@ -114,6 +115,7 @@ bool Person::validate (){
                 }
             }
         }
+        //checking the last five numbers
         string::reverse_iterator r=id.rbegin();
         for(int x=0;x<7;x++,r++){
             if(x<5){
@@ -137,6 +139,7 @@ bool Person::validate (){
         return false;
     }
 }
+
 double Person::calculateSalary(){
     return *workHours*10000;
 }

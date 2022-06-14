@@ -12,13 +12,14 @@ using namespace std;
 // static dynamic physic english farsi ap math
 
 int main(){
+    //professors
     Professor p[3];
     p[0]=Professor("sajad","zavar","92#22222",20,"Professor");
     p[1]=Professor("ashkan","ashkani","91#22222",40,"Assistant Professor");
     p[2]=Professor("erfan","erfani","86#22222",47,"Instructor");
 
 
-
+    //courses for each student
     Course c1[2],c2[3],c3[3],c4[2],c5[3],c6[3],c7[2],c8[3],c9[3],c10[2],c11[3],c12[3];
     c1[0]=Course("english",2,19);
     c1[1]=Course("math",3,13);
@@ -60,7 +61,7 @@ int main(){
 
 
 
-
+    //students
     Student s[12];
     s[0]=Student("ali","alavi","89*sd33333",30,c1,"ce",2);
     s[1]=Student("reza", "razavi","89*w12312",47,c2,"cs",3);
@@ -77,6 +78,7 @@ int main(){
 
 
     University a(2000000,3,12,p,s);
+    //calling each function
     cout<<a.averageGpa()<<"\n";
     cout<<a.averageGpaOfField("cs")<<" "<<a.averageGpaOfField("ce")<<" "<<a.averageGpaOfField("math")<<"\n";
     cout<<a.averageMarkOfCourse("farsi")<<" "<<a.averageMarkOfCourse("english")<<" "<<a.averageMarkOfCourse("math")<<" "<<a.averageMarkOfCourse("ap")<<" "<<a.averageMarkOfCourse("physic")<<" "<<a.averageMarkOfCourse("static")<<" "<<a.averageMarkOfCourse("dynamic")<<"\n";
