@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include "Course.h"
 #include "Person.h"
 #include "Student.h"
@@ -262,5 +263,42 @@ bool University::isEnoughBudget(){
         return false;
     else 
         return true;
+
+}
+
+void University::saveToFile(){
+    vector<string> fields;
+    vector<double> gpa;
+    vector<string> name;
+    vector<string> id;
+    bool flg;
+    for(int i=0;i<this->getNumOfStudents();i++){
+        flg=true;
+         int j=0;
+        for(string it:fields){
+            if (it==sArray[i].getFieldOfStudy()){
+                if(gpa.at(j)<sArray[i].gpa()){
+                    gpa.at(j)=sArray[i].gpa();
+                    name.at(j)=sArray[i].getfirstname()+" "+sArray[i].getlastname();
+                    id.at(j)=sArray[i].getid();
+                }
+                flg=false;
+            }
+            j++;
+        }
+        if(flg){
+            fields.push_back(sArray[i].getFieldOfStudy());
+            gpa.push_back(sArray[i].gpa());
+            name.push_back(sArray[i].getfirstname()+" "+sArray[i].getlastname());
+            id.push_back(sArray[i].getid());
+        }
+    }
+    ofstream file;
+    file.open("students.txt",ios::trunc);
+    int r=0;
+    for(string it:fields){
+        file<<it<<" "<<name.at(r)<<" "<<id.at(r)<<" "<<gpa.at(r)<<"\n";
+        r++;
+    }
 
 }

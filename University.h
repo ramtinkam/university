@@ -40,6 +40,7 @@ using namespace std;
         double averageMarkOfCourse(string);
         void printCourses();
         bool isEnoughBudget();
+        void saveToFile();
 
     };
 
