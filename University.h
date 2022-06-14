@@ -39,6 +39,7 @@ using namespace std;
         double averageGpaOfField(string);
         double averageMarkOfCourse(string);
         void printCourses();
+        bool isEnoughBudget();
 
     };
 

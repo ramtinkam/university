@@ -249,3 +249,18 @@ void University::printCourses(){
     }
     
 }
+
+bool University::isEnoughBudget(){
+    int b=0;
+    for(int i=0;i<this->getNumOfProfessors();i++){
+        b += pArray[i].calculateSalary();
+    }
+    for(int i=0;i<this->getNumOfStudents();i++){
+        b += sArray[i].calculateSalary();
+    }
+    if(b>budget)
+        return false;
+    else 
+        return true;
+
+}
